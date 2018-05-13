@@ -1,0 +1,504 @@
+$colorgreen:#42b773;
+$colorlightgreen:#a9dc56;
+*{
+    margin: 0px;
+    padding: 0px;
+    transition: all .3s ease;
+}
+body{
+    #header-dream{
+        background: url(image/picture1.jpg) no-repeat; 
+        background-size: cover;
+        height:1000px;
+        .container{
+            position: relative;
+            width: 1200px;
+            margin: 0px auto;
+            .logo{
+                float: left;
+                height: 180px;
+                width: 300px;
+                margin-top: 61px;
+                margin-left: 10px;
+            }
+            .nav-bar{
+                float: right;
+                height: 180px;
+                line-height: 180px;
+                ul{
+                    li{
+                        list-style: none;
+                        display: inline-block;
+                        margin:0px 15px;
+                        a{
+                            text-decoration: none;
+                            color: #42464f;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                            font-size: .85em;
+                            &:hover{
+                                text-decoration: underline;
+                                color: $colorgreen;
+                                i{
+                                    transform: rotate(180deg);
+                                    color: $colorgreen;
+                                    line-height: 30px;
+                                }
+                            }
+                            i{
+                                margin-left: 5px;
+                                color:#bdced5;
+                            }
+                        }
+                        &:first-child a{
+                            color: $colorgreen;
+                        }
+                        
+                    }
+                }
+            }
+            .dream-pool{
+                height: 620px;
+                margin-top: 380px;
+                position: absolute;
+                text-align: center;
+                color: white;
+                font-weight: bold;
+                
+                h2{
+                    font-size: 2em;
+                    margin-bottom: 20px;
+                }
+                h1{
+                    font-size: 2.5em;
+                    margin-bottom: 15px;
+                }
+                .btn{
+                    cursor: pointer;
+                    margin-top:30px;
+                    text-transform: uppercase;
+                    width: 230px;
+                    height: 60px;
+                    border-radius: 10px;
+                    border: none;
+                    font-weight: bold;
+                    color: white;
+                    outline: none;
+                    background: linear-gradient(to right, $colorgreen 0%, $colorlightgreen 100%);
+                    &:hover{
+                        background: linear-gradient(to right, $colorgreen 100%, $colorlightgreen 100%);
+                    }
+                }
+                .wh-part{
+                    position: relative;
+                    top:310px;
+                    height: 70px;
+                    background: url(image/yuxari.png) no-repeat bottom;
+                    i{
+                        cursor: pointer;
+                        line-height: 70px;
+                        color: $colorgreen;
+                        font-size: 1.5em;
+                        &:hover{
+                            line-height: 85px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #four-part{
+        margin-top: 60px;
+        height: 330px;
+        .container{
+            width: 1200px;
+            margin: 0px auto;
+            .part{
+                float: left;
+                width: 600px;
+                height: 160px;
+                background: white;
+                .circle{
+                    float: left;
+                    margin-left: 20px;
+                    margin-right: 15px;
+                    width: 123px;
+                    height: 123px;
+                    border:3px solid #dbe4e7;
+                    border-radius: 50%;
+                    h1{
+                        color:#dbe4e7;
+                        font-weight: bold;
+                        font-size: 2.5em;
+                        text-align: center;
+                        line-height: 123px;
+                    }
+                    &:hover{
+                        background: $colorlightgreen;
+                        border-color: $colorlightgreen;
+                        h1{
+                            color: white;
+                        }
+                    }
+                }
+                h3{
+                    display: inline-block;
+                    cursor: pointer;
+                    margin-top:10px;
+                    color:$colorgreen;
+                    &:hover {
+                        color: black;
+                        text-decoration: underline;
+                    }
+                }
+                p{
+                    margin-top: 10px;
+                    color:#7e89a4;
+                }
+                &:hover .circle{
+                    
+                    background: $colorlightgreen;
+                    border-color: $colorlightgreen;
+                    h1{
+                        color:white;
+                    }
+                }
+            }
+        }
+    }
+    .falt-part{
+        text-align: center;
+        background: url(image/yuxari-2.png) no-repeat bottom;
+        height: 70px;
+        i{
+            cursor: pointer;
+            line-height: 70px;
+            color: white;
+            font-size: 1.5em;
+            &:hover{
+                line-height: 85px;
+            }
+        }
+    }
+    #about{
+        height: 710px;
+        background: linear-gradient(to bottom,$colorgreen 0%, $colorlightgreen 100%);
+        .container{
+            width: 1200px;
+            margin: 0px auto;
+            h1{
+                position: relative;
+                font-size: 2.3em;
+                text-align: center;
+                top: 50px;
+                color: white
+            }
+            .three{
+                text-align: center;
+                float: left;
+                margin:50px 25px;
+                width: 350px;
+                height: 600px;
+                .abo-circle{
+                    float: left;
+                    width: 280px;
+                    height: 280px;
+                    border-radius: 50%;
+                    border:none;
+                    margin:30px 35px;
+                    margin-top: 50px;
+                    background:url(image/about-1.jpg) no-repeat;
+                    background-size: cover;
+                }
+                &:nth-child(3) .abo-circle{
+                    background:url(image/about-2.jpg) no-repeat;
+                    background-size: cover;
+                }
+                &:last-child .abo-circle{
+                    background:url(image/about-3.jpg) no-repeat;
+                    background-size: cover;
+                }
+                h3{
+                    display: inline-block;
+                    cursor: pointer;
+                    line-height: 30px;
+                    color: white;
+                        &:hover{
+                        color:lighten( black , 25%);
+                        text-decoration: underline;
+                    }
+                }
+                p{
+                    line-height: 25px;
+                    color: white;
+                    font-size: .85em;
+                }
+            }
+        }
+    }
+    .ust-part{
+        background: #f5f5f6;
+        .color{
+            text-align: center;
+            background: url(image/asagi-3.png) no-repeat top;
+            height: 70px;
+            .container{
+                width: 1200px;
+                margin: 0px auto;
+                i{
+                    cursor: pointer;
+                    line-height: 5px;
+                    color: white;
+                    font-size: 1.5em;
+                    &:hover{
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    }
+    #services{
+        height: 655px;
+        background: #f5f5f6;
+        .container{
+            position: relative;
+            width: 1200px;
+            margin: 0px auto;
+            padding-top: 30px;
+            h1{
+                font-size: 2.5em;
+                color: #42464f;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            .service-part{
+                float: left;
+                width: 280px;
+                height: 220px;
+                text-align: center;
+                margin: 10px 10px;
+                i{
+                    font-size: 3.5em;
+                    color: $colorgreen;
+                    padding: 10px 0px;
+                }
+                h3{
+                    cursor: pointer;
+                    color: lighten( black, 25);
+                    margin-bottom: 10px;
+                    &:hover{
+                        text-decoration: underline;
+                        color: $colorgreen;
+                    }
+                }
+                p{
+                    color: #938997;
+                    font-size: .9em;
+                    line-height: 25px;
+                }
+                &:hover{
+                    i{
+                        color: $colorlightgreen;
+                    }
+                }
+            }
+            .srv-part{
+                position: absolute;
+                top: 585px;
+                background: url(image/yuxari.png) no-repeat bottom;
+                height: 70px;
+                text-align: center;
+                width: 1200px;
+                i{
+                    cursor: pointer;
+                    color: $colorgreen;
+                    font-size: 1.5em;
+                    line-height: 70px;
+                    &:hover{
+                        line-height: 85px;
+                    }
+                }
+            }
+        }
+    }
+    #gallery{
+        height: 665px;
+        h1{
+            text-align: center;
+            font-size: 2.5em;
+            color: #42464f;
+            margin: 40px 0px;
+        }
+        .container{
+            position: relative;
+            width: 1263px;
+            margin: 0px auto;
+            .sm-picture{
+                float: left;
+                width: 158px;
+                height: 220px;
+                .gal-picture{
+                    img{
+                        height: 110px;
+                        width: 158px;
+                    }
+                    &:last-child{
+                        margin-top: -4px;
+                    }
+                }     
+            }
+            .big-picture{
+                float: left;
+                width: 315.5px;
+                height: 220px;
+                img{
+                    width: 315.5px;
+                    height: 220px;
+                }
+            }
+        }
+        .container-2{
+            position: relative;
+            width: 1200px;
+            margin: 0px auto;
+            .galery-part{
+                position: absolute;
+                top: 510px;
+                height: 70px;
+                width: 1200px;
+                background: url(image/yuxari-2.png) no-repeat bottom;
+                text-align: center;
+                i{
+                    cursor: pointer;
+                    line-height: 70px;
+                    color: white;
+                    font-size: 1.5em;
+                    &:hover{
+                        line-height: 85px;
+                    }
+                }
+            }
+        }
+    }
+    #contacts{
+        height: 800px;
+        .green-part{
+            height: 80px;
+            text-align: center;
+            background: $colorgreen;
+            line-height: 90px;
+                i{
+                    cursor: pointer;
+                    margin: 0px 5px;
+                    color: white;
+                    font-size: 1.5em;
+                    border-radius: 50%;
+                    width: 50px;
+                    height:50px;
+                    line-height: 50px;
+                    background: transparent;
+                    &:hover{
+                        background: $colorlightgreen;
+                    }
+                }
+        }
+        .container{
+            width: 1200px;
+            margin: 0px auto;
+            text-align: center;
+            h1{
+                margin: 50px 0px;
+                font-size: 2.5em;
+                color:#42464f;
+            }
+            ul{
+                li{
+                    margin: 0px 15px;
+                    display: inline-block;
+                    list-style: none;
+                    i{
+                        margin-right: 5px;
+                        color: $colorgreen;
+                        font-size: 1.5em;
+                    }
+                    a{
+                        text-decoration: none;
+                        font-size: 1.5em;
+                        color: $colorgreen;
+                        font-weight: bold;
+                        &:hover{
+                            color:#42464f;
+                        }
+                    }
+                    &:first-child{
+                        i{
+                            transform: rotate(90deg);
+                        }
+                    }
+                   
+                }
+            }
+            p{
+                color: #42464f;
+                margin: 15px 0px;
+            }
+            .nm-ph-em{
+                margin: 20px 15px;
+                padding:10px;
+                -webkit-text-fill-color: #7293a0;
+                float: left;
+                width: 346px;
+                height: 20px;
+                outline: none;
+                border: 1px solid #c3c6cd;
+                border-radius: 5px;
+            }
+            .message{
+                float: left;
+                height: 20px;
+                padding: 10px;
+                padding-bottom: 120px;
+                margin: 5px 15px;
+                border-radius: 5px;
+                border-style: solid;
+                width: 1143px;
+                outline: none;
+                border: 1px solid #c3c6cd;
+                border-radius: 5px;
+                -webkit-text-fill-color: #7293a0;
+            }
+            .contact-btn{
+                outline: none;
+                cursor: pointer;
+                margin-top: 30px;
+                width: 220px;
+                height: 55px;
+                background:$colorgreen;
+                border-radius: 5px;
+                border: none;
+                h3{
+                    color: white;
+                }
+                &:hover{
+                    background: $colorlightgreen;
+                }
+            }
+            .con-icon{
+                height: 90px;
+                i{
+                    cursor: pointer;
+                    line-height: 100px;
+                    font-size: 1.5em;
+                    color: $colorgreen;
+                    &:hover{
+                        line-height: 85px;
+                    }
+                }
+            }
+            .footer{
+                color: #7293a0;
+                font-size: .8em;
+            }
+        }
+    }
+}
